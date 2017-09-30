@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+	<title>Hang Man</title>
+	 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	 <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+	 <script language="javascript" type="text/javascript" src="assets/javascript/game.js"></script>
+</head>
+
+<body>
+
+
+<div id='stars'></div>
+<div id='stars2'></div>
+<div id='stars3'></div>
+
+
+<div class="splashScreen">
+	<div id='title'>
+		<span>HANG MAN</span>
+		<br>
+		<span>by Faizan Jamal</span>
+		<div class="startBtn" onclick="startGame()">Start</div>
+	</div>
+</div>
+
+
+<div class="container">
+	<div class="gameBoard">
+		<div class="used"></div>
+		<div class="puzzle"></div>
+		<div class="available"></div>
+		<div class="reset">
+			<div class="startBtn" id="resetBtn" onclick="location.reload()">Reset</div>
+		</div>
+		<canvas></canvas>
+	</div>
+</div>
+
+
+<audio id="sndCorrect" preload="auto">
+	<source src="assets/audio/correct.mp3">
+	<source src="assets/audio/correct.wav">
+</audio>
+
+<audio id="sndError" preload="auto">
+	<source src="assets/audio/error.mp3">
+	<source src="assets/audio/error.wav">
+</audio>
+
+
+</body>
+</html>
+
